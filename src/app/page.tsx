@@ -44,7 +44,7 @@ export default function Home() {
               <input type='checkbox' checked={todo.completed} onChange={() => toggleTodo(todo)} />
               <span className={todo.completed ? 'line-through ml-2' : 'ml-2'}>{todo.title}</span>
             </label>
-            <button onClick={() => removeTodo(todo.id)} className='text-red-500'>✕</button>
+            <button onClick={() => removeTodo(todo.id)} className='text-red-600'>✕</button>
           </li>
         ))}
       </ul>
